@@ -1,0 +1,67 @@
+/src
+│
+├── app
+│   ├── layout.tsx
+│   ├── page.tsx                     # Optional root landing route
+│   ├── welcome/
+│   │   ├── page.tsx
+│   │   └── components/
+│   │       └── IllustrationCarousel.tsx
+│   ├── login/
+│   │   ├── page.tsx
+│   │   └── components/
+│   ├── register/
+│   ├── passcode/
+│   ├── dashboard/
+│   │   ├── page.tsx
+│   │   └── components/
+│   ├── transfer/
+│   ├── data/
+│   ├── airtime/
+│   ├── bills/
+│   ├── confirm/
+│   ├── success/
+│   ├── otp/
+│   ├── pin/
+│   └── complete-setup/
+│
+├── components
+│   ├── ui/
+│   │   ├── button.tsx
+│   │   ├── input.tsx
+│   │   └── ...                     # All reusable UI from shadcn
+│   └── shared/                     # Optional for shared layouts, cards, etc.
+│
+├── constants/
+│   └── config.ts                   # Static values (e.g., app name, limits)
+│
+├── data/
+│   └── *.json                      # Dummy data for simulation
+│
+├── hooks/
+│   ├── useSpinner.ts
+│   ├── useErrorHandler.ts
+│   └── screen-specific-hooks.ts   # Example: useWalletBalance
+│
+├── lib/
+│   ├── axios.ts                   # Axios instance or fetch wrapper
+│   └── carousel-data.ts          # For welcome screen
+│
+├── services/
+│   └── api/
+│       ├── auth.ts
+│       ├── wallet.ts
+│       ├── transfer.ts
+│       └── ...
+│
+├── store/
+│   └── useUserStore.ts
+│   └── useWalletStore.ts
+│
+├── styles/
+│   └── globals.css
+│
+├── types/
+│   ├── wallet.ts
+│   ├── transaction.ts
+│   └── user.ts
